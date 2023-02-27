@@ -2,7 +2,7 @@
 
 /*Common code*/
 
-span, div, .brandingElements span{
+span, section div, .brandingElements span{
     display: flex;
 }
 
@@ -11,7 +11,8 @@ section{
     align-items: center;
 }
 
-div{
+section div{
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 80%;
@@ -53,6 +54,17 @@ iframe{
     display: none;
 }
 
+.infoContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.infoContainer img{
+    width: 83%;
+    object-fit: contain;
+
+}
 /*specific code*/
 
 #splash{

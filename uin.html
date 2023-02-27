@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Campos Designer</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="projects.css">
     <!--fonts from google fonts :P-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,14 @@
 <body>
     <nav id="menu">
         <div>
-        <a id="navHome" href="imgs/index.html"><p >ISAAC CAMPOS</p></a>
+        <a id="navHome" href="index.html"><p >ISAAC CAMPOS</p></a>
         <img id="burger" src="imgs/burger.svg" alt="">
         <span id="menuContent">
-            <img id="closeBtn" src="imgs/closeBtn.svg" alt="">
-            <a href=""><p class="navBtn">acerca de mi</p></a>
-            <a href=""><p class="navBtn">proyectos</p></a>
-            <a href=""><p class="navBtn">otros</p></a>
-            <a href=""><p class="navBtn">CV</p></a>
+            <img id="closeBtn" src="imgs/closeBtn.svg" alt="close button">
+            <a href="about.html"><p class="navBtn">acerca de mi</p></a>
+            <a href="index.html#projects"><p class="navBtn">proyectos</p></a>
+            <a href="index.html#video"><p class="navBtn">otros</p></a>
+            <a href="imgs/cv_IsaacCampos_2023.pdf"><p class="navBtn">CV</p></a>
         </span>
     </div>
     </nav>
@@ -49,7 +49,7 @@
     <!--Here starts the page specific code--> 
     <section id="splash">
         <div id="splashContainer">
-            <img src="IMG_0404.jpeg" alt="">
+            <img src="IMG_4040.jpeg" alt="" loading="lazy">
             <h1>UIN</h1>
         </div>
     </section>
@@ -64,8 +64,8 @@
         <div id="brandingContainer">
             <span class="brandingElements">
                 <h3>El isologo</h3>
-                <span>
-                    <img src="IMG_0404.jpeg" alt="isologo a/part creative studio">
+                <span class="infoContainer">
+                    <img src="IMG_4040.jpeg" alt="isologo a/part creative studio" loading="lazy">
                     <p>El diseño fue realizado a partir de una experimentación de los elementos visuales disponibles y de la propuesta del equipo a cargo. Esto quiere decir que por un lado se buscó hacer énfasis en los conceptos de creatividad y difusión del diseño desde un punto de vista académico. De igual manera, se tomaron en cuenta las tendencias para generar una aceptación por parte de los estudiantes.</p>
                 </span>    
             </span>
@@ -79,48 +79,49 @@
     <section id="web">
         <div id="webContainer">
             <h3>Sitio Web</h3>
-            <span id="webElements">
+            <span id="webElements" class="infoContainer">
                 <p>El sitio web funcionaba como blog, donde los participantes podían compartir los ensayos, críticas y reflexiones que han creado a lo largo de su educación universitaria.</p>
-                <img src="IMG_0404.jpeg" alt="screenshot de sitio web a/part creative studio">
+                <img src="IMG_4040.jpeg" alt="screenshot de sitio web a/part creative studio" loading="lazy">
             </span>
             <a href=""><button>ver más</button></a>
         </div>
     </section>
     <div class="separatorContainer">
         <div class="separator">
-            <img src="separator_2.svg" alt="">
+            <img src="separator_2.svg" alt="" loading="lazy">
         </div>    
     </div>
     <!--Here ends the page specific code--> 
     <hr>
     <footer>
         <div id="footerContainer">
-        <span>
+        <span class="footerSubContainer">
             <p class="footerHead">Mapa de sitio</p>
-            <a href=""><p class="footerLink">inicio</p></a>
-            <a href=""><p class="footerLink">acerca de mi</p></a>
-            <a href=""><p class="footerLink">proyectos</p></a>
-            <a href=""><p class="footerLink">videos</p></a>
-            <a href=""><p class="footerLink">social media</p></a>
-            <a href=""><p class="footerLink">3d</p></a>
+            <a href="index.html"><p class="footerLink">inicio</p></a>
+            <a href="about.html"><p class="footerLink">acerca de mi</p></a>
+            <a href="index.html#projects"><p class="footerLink">proyectos</p></a>
+            <a href="index.html#videos"><p class="footerLink">videos</p></a>
+            <a href="index.html#socialMedia"><p class="footerLink">social media</p></a>
+            <a href="index.html#design3d"><p class="footerLink">3d</p></a>
         </span>
-        <span>
+        <span class="footerSubContainer">
             <p class="footerHead">Links interesantes</p>
             <a href=""><p class="footerLink">Entrena a mi chatbot</p></a>
             <a href=""><p class="footerLink">Calcula tus impuestos</p></a>
             <a href=""><p class="footerLink">¡Envíame un correo!</p></a>
         </span>
-        <span>
+        <span class="footerSubContainer">
             <p class="footerHead">Visita mis redes!</p>
-            <img src="imgs/github_logo.png" alt="github" loading="lazy">
-            <img src="imgs/linkedin_logo.png" alt="linkedin" loading="lazy">
+            <span id="footerSocialMedia">
+            <a href="https://github.com/therealicrarod" class="socialMediaPicker"><img src="imgs/github_logo.png" alt="github" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/isaac-campos-740296a2/" class="socialMediaPicker"><img src="imgs/linkedin_logo.png" alt="linkedin" loading="lazy"></a>
+            </span>
             <span>
-                <p class="sign">Coded with love <br>by ICRAROD 2023</p>
+                <p class="sign">Coded from scratch <br>by ICRAROD 2023</p>
             </span>
         </span>
     </div>
     </footer>
     <script src="menu.js"></script>
-    <script src="indexElements.js"></script>
 </body>
 </html>

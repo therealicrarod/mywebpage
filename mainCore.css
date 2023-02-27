@@ -120,7 +120,7 @@ nav span {
     justify-content: space-between;
 }
 
-footer, #footerContainer, #footerContainer span{
+footer, #footerContainer, .footerSubContainer{
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -135,9 +135,15 @@ footer{
     width: 80%;
 }
 
-#footerContainer span{
+.footerSubContainer{
     flex-direction: column;
-    justify-content: space-around;
+    align-items: normal;
+    width: 30%;
+    text-align: center;
+}
+
+.socialMediaPicker{
+    width: 30%;
 }
 
 #footerContainer span p{
@@ -186,6 +192,19 @@ footer{
 .iframeContainer{
     width: 100%;
 }
+
+#footerSocialMedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footerSocialMedia img{
+    width: 40%;
+    object-fit: contain;
+}
+
 /*animation related*/
 
 #splashImg{

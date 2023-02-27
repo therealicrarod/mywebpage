@@ -57,7 +57,7 @@
     align-items: center;
     justify-content: center;
     width:43%;
-    background-image: url("gradient3.png");
+    background-image: url("imgs/gradient3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -212,21 +212,21 @@
 }
 
 #video1{
-    background-image: url("livethesummitperu.webp");
+    background-image: url("imgs/livethesummitperu.webp");
 }
 
 #video2{
-    background-image: url("quienesomosLivethesummit.webp");
+    background-image: url("imgs/quienesomosLivethesummit.webp");
 }
 
 #video3{
-    background-image: url("video3_thumbnail.png");
+    background-image: url("imgs/video3_thumbnail.png");
 }
 #video4{
-    background-image: url("video4_thumbnail.png");
+    background-image: url("imgs/video4_thumbnail.png");
 }
 #video5{
-    background-image: url("video5_thumbnail.png");
+    background-image: url("imgs/video5_thumbnail.png");
 }
 
 

@@ -24,7 +24,7 @@
     justify-content: center;
     width: 93%;
     padding: clamp(2vh,5vh,50px);
-    background-image: url("gradient3.png");
+    background-image: url("imgs/gradient3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; 

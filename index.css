@@ -203,7 +203,6 @@
 }
 
 .iframeContainer img{
-    height: 45vh;
     object-fit: scale-down;
     background-position: center;
     background-repeat: no-repeat;

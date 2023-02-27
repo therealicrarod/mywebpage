@@ -1,0 +1,60 @@
+@import url(mainCore.css);
+
+/* Common code elements*/
+
+/*Specific Code*/
+
+#introduction, #splash, #habilities, #introductionContainer, #other{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduction{
+    margin-top: clamp(120px,25vh,180px);
+}
+
+#introductionContainer, #splash{
+    width: 80%;
+}
+
+#splashImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 93%;
+    padding: clamp(2vh,5vh,50px);
+    background-image: url("gradient3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+#splashImg img{
+    width: 80%;
+    object-position: center;
+    object-fit:contain;
+}
+
+
+#habilitiesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    flex-wrap: wrap;
+    gap:clamp(20px,2vw,25px)
+}
+
+#habilitiesContainer span{
+    width: 46%;
+    text-align: center;
+    margin-top: clamp(15px,2vh,30px);
+}
+
+@media screen and (max-width: 768px) {
+    #habilitiesContainer{
+        flex-direction: column;
+        align-items:  center;
+    }
+}

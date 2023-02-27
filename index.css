@@ -1,0 +1,273 @@
+@import url(mainCore.css);
+
+:root{
+    /*screen sizes*/
+    --s: 576px;
+    --m: 768px;
+    --l:992px;
+    --xl:1200px;
+    --xxl:1400px;
+}
+/*Common code elements*/
+
+.projectThumbnail, .postThumbnail, .webThumbnail, .videoThumbnail, .SMVThumbnail{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.iframeContainer{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.iframeContainer img{
+    width: 100%;
+}
+/*specific code*/
+#splash{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: clamp(120px,150px,180px);
+    margin-bottom: clamp(120px,150px,180px);
+}
+
+#splashContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+#splashMsg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    width: 40%;
+}
+
+#splashImg img{
+    object-fit:contain;
+    width: 80%;
+}
+#splashImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:43%;
+    background-image: url("gradient3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#projects{
+    flex-direction: column;
+    align-items: center;
+}
+
+#projectsMainContainer, #projectsMainContainer div, #projectsMainContainer span{
+    display: flex;
+}
+
+#projectsMainContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:80%;
+    justify-content: space-evenly;
+}
+.projectContainer{
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+    margin-bottom: clamp(15px,4vh,40px);
+}
+
+#projectsMainContainer span{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#video{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#videoContainer, #videoContainer div{
+    display: flex;
+}
+
+#videoContainer{
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#videoContainer div {
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.videoPlay{
+    color:var(--secondaryText);
+}
+
+#videoContainer span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#socialMedia{
+    flex-direction: column;
+    align-items: center;
+}
+
+#posts, #posts div{
+    display: flex;
+}
+
+#posts{
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: clamp(15px,4vh,40px);
+}
+
+
+#novek, #rincon{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: clamp(15px,4vh,40px);
+}
+
+#novek img{
+    width: 30%;
+}
+
+#web{
+    flex-direction: column;
+    align-items: center;
+}
+
+#webContainer, #webContainer div{
+    display: flex;
+}
+
+#webContainer{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.webDesign{
+    flex-direction: column;
+    width: 47%;
+    margin-bottom: clamp(15px,4vh,40px);
+    align-items: center;
+    text-align: center;
+}
+
+.webDesign img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+#design3d{
+  flex-direction: column;
+  align-items: center;  
+  margin-bottom: clamp(15px,4vh,40px);
+}
+
+.container3d, .container3d span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container3d img{
+    width: 100%;
+}
+
+.container3d{
+    width: 80%;
+}
+
+.iframeContainer img{
+    height: 45vh;
+    object-fit: scale-down;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+#video1{
+    background-image: url("livethesummitperu.webp");
+}
+
+#video2{
+    background-image: url("quienesomosLivethesummit.webp");
+}
+
+#video3{
+    background-image: url("video3_thumbnail.png");
+}
+#video4{
+    background-image: url("video4_thumbnail.png");
+}
+#video5{
+    background-image: url("video5_thumbnail.png");
+}
+
+
+@media screen and (max-width: 768px) {
+    #splash{
+        margin-top: clamp(70px,90px,120px);
+        margin-bottom: clamp(70px,90px,120px);
+    }
+    #splashContainer{
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    #splashMsg, #splashImg, .webThumbnail{
+        width: 100%;
+        align-items: center;
+    }
+    #splashMsg{
+        text-align: center;
+    }
+    #projectsMainContainer, #videoContainer, #webContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #videoContainer{
+        flex-direction: column;
+    }
+    #videoContainer div{
+        width: 100%;
+    }
+    .projectContainer{
+        width: 100%;
+    }
+    .postThumbnail, .SMVThumbnail{
+        margin-bottom: clamp(15px,4vh,40px);
+    }
+    .webDesign, #posts img{
+        width: 100%;
+    }
+    #posts div{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}

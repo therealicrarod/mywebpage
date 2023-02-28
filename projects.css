@@ -83,6 +83,16 @@ iframe{
 #webElements img{
     width: 100%;
 }
+
+#novi{
+    height: 63vh !important;
+}
+#uin{
+    height: 40vh;
+}
+.uinSplash{
+    margin-top: 0px !important;
+}
 /*breakpoints*/
 @media screen and (max-width: 768px) {
     span{

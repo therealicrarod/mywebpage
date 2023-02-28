@@ -25,6 +25,11 @@
 .iframeContainer img{
     width: 100%;
 }
+
+iframe{
+    width: 100%;
+    height: 75%;
+}
 /*specific code*/
 #splash{
     justify-content: space-around;

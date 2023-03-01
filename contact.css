@@ -1,0 +1,80 @@
+@import url("mainCore.css");
+@import url("index.css");
+
+/*Global*/
+
+.separatorContainer{
+    margin-top: clamp(50px,4vh,40px);
+}
+
+#contact, .contactWrapper, .callToActionWrapper, form, #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.callToActionWrapper{
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.callToActionWrapper a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.callToActionWrapper img{
+    box-shadow: 0px 5px 8px 1px rgb(173 173 173);
+    border-radius: 50%;
+    transition: box-shadow 0.3s;
+    padding: clamp(10px,1vw,15px);
+}
+
+.callToActionWrapper img:hover{
+    box-shadow: 0px -5px 8px 1px rgb(173 173 173);
+}
+
+.callToActionWrapper img:active{
+    box-shadow: 0px 5px 8px rgb(173 173 173) inset;
+}
+
+.callToActionWrapper img{
+    width: 30%;
+}
+
+.contactWrapper{
+    width: 80%;
+}
+
+input{
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--secondaryText);
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+    border: transparent;
+    border-bottom: 1px solid var(--secondaryText);
+    text-align: center;
+}
+
+label{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--regularText);
+}
+
+/*specific code*/
+
+#callToAction{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+form{
+    width: 100%;
+    margin-bottom: clamp(30px,4vh,40px);
+}
+

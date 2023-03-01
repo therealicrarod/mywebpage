@@ -93,6 +93,9 @@ iframe{
 .uinSplash{
     margin-top: 0px !important;
 }
+.uinSplashImg{
+    width: 60% !important;
+}
 
 #ayvinos1{
     background-image: url('imgs/ayvinos_webpage_screenshot_800.png');

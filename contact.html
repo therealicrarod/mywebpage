@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Campos Designer</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
     <!--fonts from google fonts :P-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,31 +50,36 @@
         </div>
     </div>
     </section>
+
+    <section id="contact">
+        <h2>Selecciona un medio</h2>
+        <div id="callToAction" class="contactWrapper">
+            <span class="callToActionWrapper">
+                <a href="https://wa.me/5515371654"><img src="imgs/whatsapp.svg" alt="whatsapp logo"></a>
+                <h4>Envíame un whatsapp</h4>
+            </span>
+            <span class="callToActionWrapper">
+                <a href="mailto:isaac.camposdsg@gmail.com"><img src="imgs/mail_icon.svg" alt="mail icon"></a>
+                <h4>Envíame un correo</h4>
+            </span>
+        </div>
+    </section>
     <div class="separatorContainer">
         <div class="separator">
             <img src="imgs/separator_2.svg" alt="">
         </div>    
     </div>
-    <section id="contact">
-        <div>
-            <span>
-                <img src="imgs/whatsapp.svg" alt="whatsapp logo">
-                <h4>Envíame un whatsapp</h4>
-            </span>
-            <span>
-                <img src="imgs/mail_icon.svg" alt="mail icon">
-                <h4>Envíame un correo</h4>
-            </span>
-        </div>
-        <div>
-            <p>Déjame un mensaje y me comunico contigo :3</p>
+    <section id="form">
+        <div class="contactWrapper">
+            <h3>Déjame un mensaje y me comunico contigo :3</h3>
             <form action="send">
-                <label for="name">name</label>
-                <input type="text" name="name">
-                <label for="mail">mail</label>
-                <input type="mail" name="mail" id="mail">
+                <label for="name">nombre</label>
+                <input type="text" name="name" required>
+                <label for="mail">email</label>
+                <input type="mail" name="mail" id="mail" required>
                 <label for="message">mensaje</label>
-                <input type="text" name="message" id="message">
+                <input type="text" name="message" id="message" required>
+                <button id="submit">Enviar!</button>
             </form>
         </div>
     </section>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Campos Designer</title>
+    <link rel="stylesheet" href="index.css">
+    <!--fonts from google fonts :P-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="menu">
+        <div>
+        <a id="navHome" href="index.html"><p >ISAAC CAMPOS</p></a>
+        <img id="burger" src="imgs/burger.svg" alt="">
+        <span id="menuContent">
+            <img id="closeBtn" src="imgs/closeBtn.svg" alt="close button">
+            <a href="about.html"><p class="navBtn">acerca de mi</p></a>
+            <a href="index.html#projects"><p class="navBtn">proyectos</p></a>
+            <a href="index.html#video"><p class="navBtn">otros</p></a>
+            <a href="contact.html"><p class="navBtn">contacto</p></a>
+            <a href="imgs/cv_IsaacCampos_2023.pdf"><p class="navBtn">CV</p></a>
+        </span>
+    </div>
+    </nav>
+    <div id="CTO">
+        <span id="CTOMsg">
+            <p class='ctoText'>Da click aquí para contactarme</p>
+        </span>
+        <span id="CTOImg">
+            <a href="contact.html"><img src="imgs/cat2.svg" alt="cat2"></a>
+        </span>
+    </div>
+
+    <!--Here starts the page specific code-->    
+
+    <section id="splash">
+        <div id="splashContainer">
+        <div id="splashMsg">
+            <h1>Estemos en contacto!</h1>
+        </div>
+        <div id="splashImg">
+            <img src="imgs/cat1_500.png"
+            srcset="imgs/cat1_300.png 300w, imgs/cat1_500.png 500w"
+            sizes="(max-width: 300) 300px, 500px" 
+            alt="">
+        </div>
+    </div>
+    </section>
+    <div class="separatorContainer">
+        <div class="separator">
+            <img src="imgs/separator_2.svg" alt="">
+        </div>    
+    </div>
+    <section id="contact">
+        <div>
+            <span>
+                <img src="imgs/whatsapp.svg" alt="whatsapp logo">
+                <h4>Envíame un whatsapp</h4>
+            </span>
+            <span>
+                <img src="imgs/mail_icon.svg" alt="mail icon">
+                <h4>Envíame un correo</h4>
+            </span>
+        </div>
+        <div>
+            <p>Déjame un mensaje y me comunico contigo :3</p>
+            <form action="send">
+                <label for="name">name</label>
+                <input type="text" name="name">
+                <label for="mail">mail</label>
+                <input type="mail" name="mail" id="mail">
+                <label for="message">mensaje</label>
+                <input type="text" name="message" id="message">
+            </form>
+        </div>
+    </section>
+
+    <!--Here ends the page specific code--> 
+        <hr>
+        <footer>
+            <div id="footerContainer">
+            <span class="footerSubContainer">
+                <p class="footerHead">Mapa de sitio</p>
+                <a href="index.html"><p class="footerLink">inicio</p></a>
+                <a href="about.html"><p class="footerLink">acerca de mi</p></a>
+                <a href="index.html#projects"><p class="footerLink">proyectos</p></a>
+                <a href="index.html#videos"><p class="footerLink">videos</p></a>
+                <a href="index.html#socialMedia"><p class="footerLink">social media</p></a>
+                <a href="index.html#design3d"><p class="footerLink">3d</p></a>
+            </span>
+            <span class="footerSubContainer">
+                <p class="footerHead">Links interesantes</p>
+                <a href=""><p class="footerLink">Entrena a mi chatbot</p></a>
+                <a href=""><p class="footerLink">Calcula tus impuestos</p></a>
+                <a href=""><p class="footerLink">¡Envíame un correo!</p></a>
+            </span>
+            <span class="footerSubContainer">
+                <p class="footerHead">Visita mis redes!</p>
+                <span id="footerSocialMedia">
+                <a href="https://github.com/therealicrarod" class="socialMediaPicker"><img src="imgs/github_logo.png" alt="github" loading="lazy"></a>
+                <a href="https://www.linkedin.com/in/isaac-campos-740296a2/" class="socialMediaPicker"><img src="imgs/linkedin_logo.png" alt="linkedin" loading="lazy"></a>
+                </span>
+                <span>
+                    <p class="sign">Coded from scratch by ICRAROD 2023</p>
+                </span>
+            </span>
+        </div>
+        </footer>
+        <script src="menu.js"></script>
+    </body>
+    </html>

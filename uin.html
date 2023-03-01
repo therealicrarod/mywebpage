@@ -21,6 +21,7 @@
             <a href="about.html"><p class="navBtn">acerca de mi</p></a>
             <a href="index.html#projects"><p class="navBtn">proyectos</p></a>
             <a href="index.html#video"><p class="navBtn">otros</p></a>
+            <a href="contact.html"><p class="navBtn">contacto</p></a>
             <a href="imgs/cv_IsaacCampos_2023.pdf"><p class="navBtn">CV</p></a>
         </span>
     </div>
@@ -30,22 +31,9 @@
             <p class='ctoText'>Da click aquí para contactarme</p>
         </span>
         <span id="CTOImg">
-            <img src="imgs/cat2.svg" alt="cat2">
+            <a href="contact.html"><img src="imgs/cat2.svg" alt="cat2"></a>
         </span>
     </div>
-    <span id="contactOptions">
-        <p class="contact">Selecciona el medio</p>
-        <span id="OptContainer">
-            <span class="OptSubContainer">
-                <a href="mailto:isaac.camposdsg@gmail.com?subject=Contacto"><img src="imgs/mail_icon.svg" alt="send mail"></a>
-                <p class="ctoText">mail</p>
-            </span>
-            <span class="OptSubContainer">
-                <a href="https://wa.me/5515371654"><img src="imgs/whatsapp.svg" alt="send whatsapp"></a>
-                <p class="ctoText">whatsapp</p>
-            </span>
-        </span>
-    </span>
     <!--Here starts the page specific code--> 
     <section id="splash" class="uinSplash">
         <div id="splashContainer">
@@ -88,10 +76,11 @@
             <span id="webElements" class="infoContainer">
                 <p>El sitio web funcionaba como blog, donde los participantes podían compartir los ensayos, críticas y reflexiones que han creado a lo largo de su educación universitaria.</p>
                 <img src="imgs/uin_preview_800.png"
-                srcset="imgs/uin_preview_500.png 500w, imgs/uin_preview_800.png 800w, imgs/uin_logo_1000.png 1000w"
-                sizes="(max-width: 450px) 500px, (min-width:750px) 800px, 1000px" 
+                srcset="imgs/uin_preview_500.png 500w, imgs/uin_preview_800.png 800w"
+                sizes="(max-width: 450px) 500px,800px" 
                 alt="uin website screenshot" loading="lazy">
             </span>
+            <button id="buttonWeb">ver</button>
         </div>
     </section>
     <div class="separatorContainer">
@@ -131,5 +120,6 @@
     </div>
     </footer>
     <script src="menu.js"></script>
+    <script src="uin.js"></script>
 </body>
 </html>

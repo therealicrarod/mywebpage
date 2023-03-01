@@ -2,9 +2,9 @@
 
 var menuContent = document.getElementById('menuContent');
 var screenSize = window.innerWidth;
-var contactMenu = document.getElementById('contactOptions');
 
-console.log(screenSize)
+
+//console.log(screenSize)
 
 addEventListener('resize',(e)=>{
     screenSize = window.innerWidth; 
@@ -56,8 +56,8 @@ async function setObserver (target,display) {
     let options={threshold:0.8}
 
     const callback = (entries,observer) => {
-        console.log(entries[0].isVisible);
-        console.log(entries[0]); 
+        //console.log(entries[0].isVisible);
+        //console.log(entries[0]); 
         
         //splash animation code
         var splashIMG= document.getElementById('splashImg');
@@ -66,7 +66,7 @@ async function setObserver (target,display) {
 
         
         if (entries[0].isIntersecting != true){
-            console.log("true");
+            //console.log("true");
                 display.style.top="0px";
 
                 //extra target 4 call to action
@@ -78,7 +78,6 @@ async function setObserver (target,display) {
                 splashIMG.style.transform="translateX(60px)";
                 splashIMG.style.opacity="0";
                 }
-                contactMenu.style.display="flex";
                 ctoAction();
                 //observer.unobserve(entries[0].target);
         }else{
@@ -87,7 +86,6 @@ async function setObserver (target,display) {
                 splashIMG.style.opacity="1";
             }
             CTO.style.transform="translateX(500px)"
-            contactMenu.style.opacity="0";
             ctoTrigger = true;
             display.style.top="-500px"
         }
@@ -95,7 +93,7 @@ async function setObserver (target,display) {
 
     let observer = new IntersectionObserver(callback,options);
     observer.observe(target);
-    console.log(observer);
+    //console.log(observer);
 }
 
 //set delay to show and hide message
@@ -115,27 +113,6 @@ function ctoAction (){
             },5500)
         },1500)
     }
-
-    //show 
-    CTO.addEventListener( "click",()=>{
-            contactMenu.style.display="flex"
-            setTimeout(()=>{              
-        contactMenu.style.width="clamp(144px, 30vw, 500px)";
-        contactMenu.style.height="17vh";
-        contactMenu.style.opacity="1";
-        contactMenu.style.transform="translateX(0px)"
-        msg.style.display="none";
-        contactMenu.style.zIndex="100"
-    },100)
-
-        contactMenu.addEventListener("mouseleave",()=>{
-        contactMenu.style.opacity="0";
-        setTimeout(()=>{
-            contactMenu.style.display="none";
-            },200)
-        })
-
-    })
 }
 
 

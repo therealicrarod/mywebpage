@@ -75,7 +75,7 @@ iframe{
     object-fit: scale-down;
 }
 
-#webElements{
+.webElements{
     flex-direction: column;
     align-items: center;
 }
@@ -93,6 +93,14 @@ iframe{
 .uinSplash{
     margin-top: 0px !important;
 }
+
+#ayvinos1{
+    background-image: url('imgs/ayvinos_webpage_screenshot_800.png');
+}
+#ayvinos2{
+    background-image: url('imgs/ayvinos_webpage_screenshot2_800.png');
+}
+
 /*breakpoints*/
 @media screen and (max-width: 768px) {
     span{
@@ -106,5 +114,11 @@ iframe{
     }
     .subElementsGallery img{
         width: 80%;
+    }
+    #ayvinos1{
+        background-image: url('imgs/ayvinos_webpage_screenshot_500.png');
+    }
+    #ayvinos2{
+        background-image: url('imgs/ayvinos_webpage_screenshot2_500.png');
     }
 }

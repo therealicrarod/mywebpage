@@ -57,7 +57,7 @@
     align-items: center;
     justify-content: center;
     width:43%;
-    background-image: url("imgs/gradient3.png");
+    background-image: url("imgs/gradient_500.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -251,6 +251,9 @@
     }
     #splashMsg{
         text-align: center;
+    }
+    #splashImg{
+        background-image: url('imgs/gradient_500.png');
     }
     #projectsMainContainer, #videoContainer, #webContainer{
         flex-direction: column;

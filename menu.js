@@ -92,8 +92,9 @@ async function setObserver (target,display) {
     }
 
     let observer = new IntersectionObserver(callback,options);
-    observer.observe(target);
+    if (target != undefined) {observer.observe(target);
     //console.log(observer);
+    }
 }
 
 //set delay to show and hide message

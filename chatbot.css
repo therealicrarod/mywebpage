@@ -1,0 +1,87 @@
+@import url("mainCore.css");
+
+/*Global*/
+
+input{
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--secondaryText);
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+    border: transparent;
+    border-bottom: 1px solid var(--secondaryText);
+    text-align: center;
+}
+
+/*common places*/
+
+.usrTxt{
+  align-items: flex-end;
+  text-align:right;
+  margin-right:1.3em;
+  color:var(--secondaryText);
+}
+.botTxt{
+  align-items: flex-start;
+  text-align:left;
+  margin-left:1.3em;
+  color:var(--regularText);
+}
+
+
+/*specific*/
+
+#chatbot{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: clamp(79px,2vh,44px);
+}
+
+#conversation{
+    display:none;
+    flex-direction: column;
+    border: 2px var(--yellow) solid;
+    box-shadow: var(--glowVal);
+    border-radius: 25px;
+    width: 80%;
+    height: 48vh;
+    overflow-y: scroll;
+}
+
+#conversation::-webkit-scrollbar{
+  display:none;
+}
+
+#usr_input{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 80%;
+    height: 50vh;
+}
+
+#usr_input span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#usr_input p{
+  font-size:10px;
+}
+
+#input{
+    display:none;
+    flex-direction: column;
+    align-items:center;
+    width: 80%;
+    height: 20vh;
+}
+
+#wrongUsr, #wrongMsg{
+  display:none;
+  color:red;
+  font-family:monospace;
+}

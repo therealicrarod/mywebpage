@@ -267,7 +267,7 @@ footer{
     display: flex;
     width: 80%;
     height: 70%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     overflow-y: scroll;
 }

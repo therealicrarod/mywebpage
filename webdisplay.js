@@ -7,6 +7,8 @@ const section = document.getElementById("web");
 for (let i = 0; i < fullbutton[0].childNodes.length; i++ ){
     var element = fullbutton[0].childNodes[i].id;
 
+    console.log(element)
+
     if(element == "ayvinos1"){
         fullbutton[0].childNodes[i].addEventListener('click',()=>{
             createFullscreen("ayvinos1");
@@ -15,17 +17,31 @@ for (let i = 0; i < fullbutton[0].childNodes.length; i++ ){
         fullbutton[0].childNodes[i].addEventListener('click',()=>{
             createFullscreen("ayvinos2");
         })
+    }else if(element == "sobretodo1"){
+        fullbutton[0].childNodes[i].addEventListener('click',()=>{
+            createFullscreen("sobretodo1");
+        })
+    }else if(element == "dvee"){
+        fullbutton[0].childNodes[i].addEventListener('click',()=>{
+            createFullscreen("dvee");
+        })
     }
 }
 
 function createFullscreen(value){
-    const urls = ["imgs/ayvinos_webpage_screenshot.png","imgs/ayvinos_webpage_screenshot2.png"];
+    const urls = ["imgs/ayvinos_webpage_screenshot.png","imgs/ayvinos_webpage_screenshot2.png","imgs/sobretodo_web_screenshot.png", "imgs/dvee_webpage_screenshot.png"];
     switch (value){
         case "ayvinos1":
             createCode(urls[0]);
             break
         case "ayvinos2":
             createCode(urls[1]);
+            break
+        case "sobretodo1":
+            createCode(urls[2]);
+            break
+        case "dvee":
+            createCode(urls[3]);
             break
     }
 }

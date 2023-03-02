@@ -97,11 +97,32 @@ iframe{
     width: 60% !important;
 }
 
+/*web previews*/
+
 #ayvinos1{
     background-image: url('imgs/ayvinos_webpage_screenshot_800.png');
 }
 #ayvinos2{
     background-image: url('imgs/ayvinos_webpage_screenshot2_800.png');
+}
+#sobretodo1{
+    background-image: url('imgs/sobretodo_web_screenshot_800.png');
+}
+#dvee{
+    background-image: url('imgs/dvee_screenshot_preview_800.png');
+}
+/*web previews end*/
+
+.sobretodoLabel{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.sobretodoLabel img{
+    width: 36%;
+    object-fit: contain;
 }
 
 /*breakpoints*/
@@ -118,10 +139,25 @@ iframe{
     .subElementsGallery img{
         width: 80%;
     }
+
+    /*Web previews*/
     #ayvinos1{
         background-image: url('imgs/ayvinos_webpage_screenshot_500.png');
     }
     #ayvinos2{
         background-image: url('imgs/ayvinos_webpage_screenshot2_500.png');
+    }
+    #sobretodo1{
+        background-image: url('imgs/sobretodo_web_screenshot_500.png');
+    }
+    #dvee{
+        background-image: url('imgs/dvee_screenshot_preview_500.png');
+    }
+    /*web previews end*/
+
+    .sobretodoLabel{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -97,6 +97,48 @@ iframe{
     width: 60% !important;
 }
 
+#apart_test{
+    width:80%;
+    background: linear-gradient(white, white) padding-box;
+    background: linear-gradient(43deg, rgba(170,8,255,1) 0%, rgba(0,184,233,1) 45%, rgba(74,255,117,1) 86%, rgba(90,133,255,1) 100%) border-box;
+    border-radius: 25px; 
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: box-shadow 0.25s;
+}
+
+#apart_test span{
+    background-color: white;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:0.5vh 0.3vw;
+    transition: background-color 0.4s;
+}
+
+#apart_test img{
+    width: 10%;
+}
+
+#apart_test p {
+    color: var(--secondaryText);
+}
+
+#apart_test:hover{
+    box-shadow: 0px 5px 8px 1px rgb(212, 212, 212);
+}
+
+#apart_test span:active{
+    background-color: transparent;
+}
+
+#apart_testWrapper:active #test_text{
+    color: white;
+}
+
 /*web previews*/
 
 #ayvinos1{

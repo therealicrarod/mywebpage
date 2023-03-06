@@ -53,7 +53,7 @@ function createCode (value){
         frag = document.createDocumentFragment(),
         span = document.createElement("SPAN"),
         close = document.createElement("IMG"),
-        closeUrl = "imgs/closeBTN.svg";
+        closeUrl = "imgs/closeBtn.svg";
 
     div.classList.add("fullscreenWrapper")
     div.setAttribute("id","fullscreenPreview")
